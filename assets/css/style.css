@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caramel&family=Varta:wght@300&display=swap');
+/* var(--lightgrey,#9d9898) */
+
+:root {
+    --lightgrey: #9d9898;
+}
+
+nav li{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2em;
+}
+nav li:hover{
+    color: var(--lightgrey)
+    cursor: pointer;
+}
+nav li:after{
+    margin: 0px 15px;
+    content: "/";
+    font-family: Varta;
+    
+}
+nav li:last-child::after{
+    content: none;
+}
+/* hero section */
+#hero{
+    background: #f5f5f5;
+}
+#hero h2{
+    font-family: Caramel;
+    font-size: 2.5em;
+}
+#hero .container{
+    max-width: 450px;
+    margin: auto;
+}
+#hero div a{
+    min-width: 190px;
+}
+#hero div a:first-child{
+    color: var(--lightgrey)
+}
