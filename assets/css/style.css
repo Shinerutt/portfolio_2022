@@ -10,7 +10,7 @@ nav li{
     font-size: 1.2em;
 }
 nav li:hover{
-    color: var(--lightgrey)
+    color: var(--lightgrey);
     cursor: pointer;
 }
 nav li:after{
@@ -38,5 +38,5 @@ nav li:last-child::after{
     min-width: 190px;
 }
 #hero div a:first-child{
-    color: var(--lightgrey)
+    color: var(--lightgrey);
 }
