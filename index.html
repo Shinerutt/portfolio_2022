@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--Swiper--->
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <title>Portfolio</title>
+    <style>
+
+    </style>
 </head>
+
 <body>
     <header class="container">
         <div class=" text-center">
@@ -22,12 +30,13 @@
     <!-- Hero Section -->
     <section id="hero" class="mt-3 p-2">
         <div class="container text-center pb-3">
-            <h2 >About</h2>
+            <h2>About</h2>
             <img src="assets/img/profile.png" alt="">
-            <p class="p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt dolore voluptas porro tenetur praesentium cupiditate vitae voluptatibus! Odit in, maiores saepe </p>
+            <p class="p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt dolore voluptas porro
+                tenetur praesentium cupiditate vitae voluptatibus! Odit in, maiores saepe </p>
             <div class="row">
                 <div class="col-md-6 col-sm-12 my-2">
-                    <a href="#" class="btn bg-white shadow rounded ">Download Resume</a>    
+                    <a href="#" class="btn bg-white shadow rounded ">Download Resume</a>
                 </div>
                 <div class="col-md-6 col-sm-12  my-2">
                     <a href="#" class="btn bg-dark shadow rounded text-white">Contact me</a>
@@ -35,5 +44,108 @@
             </div>
         </div>
     </section>
+    <!-- Portfolio Detail -->
+    <section id="portfolio" class="mt-3 p-2">
+        <div class="container">
+            <h2 class="text-center">Portfolio</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-12 order-2  order-lg-1 ">
+                                <h3>PONY</h3>
+                                <div class="d-flex flex-column justify-content-center align-items-center  detail ">
+                                    <b>Web Design</b>
+                                    <b>Language</b>
+                                    <p>HTML+CSS</p>
+                                    <b>Description</b>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tortor dictum,
+                                        vulputate risus id, placerat lorem. Maecenas cursus rutrum purus, vel pulvinar
+                                        odio tempus </p>
+                                    <span>August 2022</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-12 order-1 order-lg-2 p-3"><img width="100%" src="assets/img/project/pony.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-12 order-2  order-lg-1">
+                                <h3>Thonburi Travel</h3>
+                                <div class="d-flex flex-column justify-content-center align-items-center detail ">
+                                    <b>Web Design</b>
+                                    <b>Language</b>
+                                    <p>HTML+CSS</p>
+                                    <b>Description</b>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tortor dictum,
+                                        vulputate risus id, placerat lorem. Maecenas cursus rutrum purus, vel pulvinar
+                                        odio tempus </p>
+                                    <span>August 2022</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-12 order-1 order-lg-2 p-3"><img src="assets/img/project/pony.png" width="100%" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-12 order-2  order-lg-1">
+                                <h3>valorant</h3>
+                                <div class="d-flex flex-column justify-content-center align-items-center detail">
+                                    <b>Web Design</b>
+                                    <b>Language</b>
+                                    <p>HTML+CSS</p>
+                                    <b>Description</b>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tortor dictum,
+                                        vulputate risus id, placerat lorem. Maecenas cursus rutrum purus, vel pulvinar
+                                        odio tempus </p>
+                                    <span>August 2022</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-12 order-1 order-lg-2 p-3"><img src="assets/img/project/pony.png" alt="" width="100%"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-12 order-2  order-lg-1">
+                                <h3>sweetpotato</h3>
+                                <div class="d-flex flex-column justify-content-center align-items-center detail">
+                                    <b>Web Design</b>
+                                    <b>Language</b>
+                                    <p>HTML+CSS</p>
+                                    <b>Description</b>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed tortor dictum,
+                                        vulputate risus id, placerat lorem. Maecenas cursus rutrum purus, vel pulvinar
+                                        odio tempus </p>
+                                    <span>August 2022</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-12 order-1 order-lg-2 p-3"><img src="assets/img/project/pony.png" alt="" width="100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next">>)</div>
+                <div class="swiper-button-prev">(<</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
+
 </html>

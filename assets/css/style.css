@@ -3,8 +3,13 @@
 
 :root {
     --lightgrey: #9d9898;
+    --bluepony: #292E5F;
+    --darkpony: #262626;
 }
-
+h2{
+    font-family: Caramel;
+    font-size: 2.5em;
+}
 nav li{
     font-family: 'Bebas Neue', cursive;
     font-size: 1.2em;
@@ -26,10 +31,6 @@ nav li:last-child::after{
 #hero{
     background: #f5f5f5;
 }
-#hero h2{
-    font-family: Caramel;
-    font-size: 2.5em;
-}
 #hero .container{
     max-width: 450px;
     margin: auto;
@@ -40,3 +41,85 @@ nav li:last-child::after{
 #hero div a:first-child{
     color: var(--lightgrey);
 }
+/* portfolio section */
+#portfolio div h3{
+    color: var(--bluepony);
+    font-family: "Bebas Neue";
+}
+#portfolio div p{
+    color: var(--lightgrey);
+    max-width: 200px;
+    text-align: center;
+}
+#portfolio div p + span{
+    margin-top: 100px;
+}
+#portfolio div b:first-child{
+    margin-bottom: 20px;
+}
+/* .swiper-pagination{ */
+    /* position: absolute; */
+    /* background:red; */
+    /* transform: rotate(90); */
+/* } */
+
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    /* background: red; */
+    top: 0px;
+    bottom: auto !important;
+    display: flex;
+    flex-direction: column;
+    width: auto !important;
+    left: 40% !important;
+    position: absolute;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets span {
+    margin-top: 10px !important;
+    width: 13px;
+    height: 13px;
+}
+
+.swiper-button-prev{
+    font-family: Caramel;
+    font-size: 3.5em;
+    top: 80% !important;
+    left: 39% !important;
+    color: var(--lightgrey) !important;
+}
+.swiper-pagination-bullet-active{
+    background: var(--darkpony) !important;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    color: var(--darkpony) !important;
+    transition: 0.5s !important;
+}
+.swiper-button-prev:after{
+    content: none !important;
+}
+.swiper-button-next{
+    font-family: Caramel;
+    font-size: 3.5em;
+    top: 88% !important;
+    left: 39% !important;
+    color: var(--lightgrey) !important;
+}
+.swiper-button-next:after{
+    content: none !important;
+}
+@media only screen and (max-width: 991px) {
+    .swiper-pagination, .swiper-button-next, .swiper-button-prev  {
+     display: none !important; 
+    }
+  }
+
+  @media only screen and (min-width: 991px) {
+    .swiper-slide .p-3{
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .detail{
+        height: 90%;
+    }
+  }
