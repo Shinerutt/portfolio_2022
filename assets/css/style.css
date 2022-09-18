@@ -14,7 +14,11 @@ nav li{
     font-family: 'Bebas Neue', cursive;
     font-size: 1.2em;
 }
-nav li:hover{
+nav li a{
+    text-decoration: none;
+    color: var(--darkpony);
+}
+nav li a:hover{
     color: var(--lightgrey);
     cursor: pointer;
 }
@@ -28,7 +32,7 @@ nav li:last-child::after{
     content: none;
 }
 /* hero section */
-#hero{
+#hero, #skill{
     background: #f5f5f5;
 }
 #hero .container{
@@ -108,9 +112,101 @@ nav li:last-child::after{
 .swiper-button-next:after{
     content: none !important;
 }
+/* skill section */
+#skill .skill-wrapper div{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.skill-wrapper{
+    justify-content: space-around;
+    border: 3px  solid black;
+    border-bottom: none;
+    /* background: red; */
+    padding: 70px 0px;
+    
+}
+#skill .row>*{
+    padding: 0px !important;
+}
+.border-l-none{
+    border-left: none;
+    border-right: none ;
+}
+.border-r-none{
+    border-right: none;
+}
+#skill h3{
+    background: var(--darkpony);
+    color: white;
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    margin-top: -25px;
+    padding: 10px;
+    font-family: "Bebas Neue";
+    /* top: 0px; */
+}
+.right-zero{
+    right: 0px;
+}
+.circle{
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    background: var(--darkpony);
+    position: absolute;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+.border-none{
+    border: none;
+}
+/* Footer */
+footer{
+    background: var(--darkpony);
+}
+footer img{
+    filter: invert();
+}
 @media only screen and (max-width: 991px) {
-    .swiper-pagination, .swiper-button-next, .swiper-button-prev  {
+    .circle{
      display: none !important; 
+    }
+    .skill-wrapper{
+        border: none;
+        
+    }
+    #skill h3{
+        position: relative;
+        margin: auto;
+    }
+    .footer-detail{
+        display: flex;
+        justify-content: center;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+        position: relative;
+        flex-direction: row !important;
+        justify-content: center;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+        left: 0px !important;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        bottom: 0px;
+        position: relative !important;
+    }
+
+    .swiper-button-next{
+        left: 90% !important;
+        bottom: 10px;
+    }
+    .swiper-button-prev{
+        left: 5% !important;
+        bottom: 35px;
     }
   }
 
